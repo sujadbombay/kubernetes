@@ -1,0 +1,6 @@
+
+
+  rm -rf $HOME/.kube/config # will erase previous config, please check if you wanted this, else remove this line
+  mkdir -p $HOME/.kube
+  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+  sudo chown $(id -u):$(id -g) $HOME/.kube/confi
